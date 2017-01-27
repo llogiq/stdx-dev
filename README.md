@@ -88,7 +88,7 @@ command line in your crate root. Otherwise, add the following to your
 
 ```toml
 [dev-dependencies]
-quickcheck = "*"
+quickcheck = "0.4"
 ```
 
 Now you can use quickcheck in your tests! The easiest way is:
