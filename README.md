@@ -167,7 +167,7 @@ extern crate flame;
 fn foo() {
    flame::start("foo");
    let result = ...;
-   flame::end("foo);
+   flame::end("foo");
    return result;
 }
 
