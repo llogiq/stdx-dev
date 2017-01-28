@@ -29,6 +29,7 @@ With that out of the way, here are the goods:
 |benchmarks              |[bencher](#bencher)      |
 |profiling               |[flame](#flame)          |
 |dependency management   |[cargo-edit](#cargo-edit)|
+|dependency management   |[cargo-outdated](#cargo-outdated)|
 
 # Clippy
 
@@ -193,6 +194,16 @@ https://raw.githubusercontent.com/TyOverby/flame/master/resources/screenshot.png
 This crate gives you the `cargo add`, `cargo rm` and `cargo list` subcommands,
 allowing for easy dependency management from the command line. Refer to the
 docs for further information.
+
+# cargo-outdated
+
+[Crate](https://crates.io/crates/cargo-outdated) |
+[Repository](https://github.com/kbknapp/cargo-outdated) |
+[Docs](https://github.com/kbknapp/cargo-outdated/blob/master/README.md) |
+[MIT]
+
+This crate gives you the `cargo outdated` subcommand which displays when
+dependencies have newer versions available.
 
 ----
 
