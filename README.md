@@ -19,6 +19,22 @@ around [racer] and the nascent [RLS] (Rust Language Server). See
 [racer]: https://github.com/phildawes/racer
 [RLS]: https://github.com/jonathandturner/rls
 
+### A Note About Nightly
+
+Some tools require a nightly Rust compiler to work. This is usually not a
+problem, because it's easy enough to run different Rust versions side by side
+thanks to [rustup], and most of those tools are only needed while developing
+software and either don't factor into or can easily be removed from the final
+build. Nevertheless, not everyone wants to maintain a nightly Rust version for
+tooling, so we'll mark the respective crates with a <kbd>⚠ nightly only</kbd>
+label.
+
+If you want to have a nightly version, and already have rustup, just type
+`rustup install nightly` into your console. To update to the newest version,
+use `rustup update nightly`.
+
+[rustup]: https://rustup.rs
+
 With that out of the way, here are the goods:
 
 |feature                 |crate                    |
@@ -36,7 +52,7 @@ With that out of the way, here are the goods:
 [Crate](https://crates.io/crates/clippy) |
 [Repository](https://github.com/Manishearth/rust-clippy) |
 [Docs](https://github.com/Manishearth/rust-clippy/wiki) |
-[MPL-2.0]
+[MPL-2.0] | <kbd>⚠ nightly only</kbd>
 
 More than 180 lints (at the time of this writing) catch bugs and unfortunate
 patterns and give helpful suggestions.
@@ -44,7 +60,6 @@ patterns and give helpful suggestions.
 Install and run clippy with:
 
 ```sh
-rustup install nightly # get a nightly Rust
 cargo +nightly install clippy # install clippy, add "-f" to upgrade existing
 cargo +nightly clippy # runs clippy on the current project
 ```
@@ -154,9 +169,9 @@ This can be run with the usual `cargo bench`.
 [MIT] / [Apache-2.0]
 
 Flame is a library that allows you to stopwatch your code and see the result
-rendered as a flame graph. There is also the (unstable, nightly-only) [flamer]
-plugin that lets you annotate your crates/modules/items to insert flame trace
-points.
+rendered as a flame graph. There is also the (<kbd>⚠ nightly only</kbd>)
+[flamer] plugin that lets you annotate your crates/modules/items to insert
+flame trace points.
 
 [flamer]: https://github.com/llogiq/flamer
 
