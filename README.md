@@ -46,6 +46,7 @@ With that out of the way, here are the goods:
 |profiling               |[flame](#flame)          |
 |dependency management   |[cargo-edit](#cargo-edit)|
 |dependency management   |[cargo-outdated](#cargo-outdated)|
+|dependency author listing|[cargo-authors](#cargo-authors)|
 
 # Clippy
 
@@ -219,6 +220,16 @@ docs for further information.
 
 This crate gives you the `cargo outdated` subcommand which displays when
 dependencies have newer versions available.
+
+# cargo-authors
+
+[Crate](https://crates.io/crates/cargo-authors) |
+[Repository](https://github.com/Henning-K/cargo-authors) |
+[Docs](https://github.com/Henning-K/cargo-authors/blob/master/README.md) |
+[MIT] / [Apache-2.0]
+
+This crate gives you the `cargo authors` subcommand which lists all the
+authors of all the dependencies of the crate in your current working directory.
 
 ----
 
